@@ -76,7 +76,7 @@ header nav h2 ul li a:hover {
     background-color: grey;
 }
 
-.flex-card {
+.flex-card , .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -85,19 +85,48 @@ header nav h2 ul li a:hover {
 .section-title {
     width: 100%;
     font-size: 30px;
-    margin: 50px;
+    padding: 5px 50px;
+    margin: 50px 0;
+    background-color: rgba(100, 100, 100, 0.2);
 }
 
-.flex-card img {
-    /* display: flex; */
+.flex-card img , .portfolio .image-container img {
+    display: flex;
     width: 200px;
     margin-right: 50px;
 }
 
-.flex-text {
+.flex-text , .project-gallery {
     width: 70%;
     border-left: black solid 5px;
     padding: 0 50px;
 }
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+} */
+
+
+
+/* .hero-project {
+    display: flex;
+    width: 20%;
+} */
+
+/* .hero-project img {
+    display: flex;
+    width: 50%;
+}  */
+
+/* 
+.project-gallery img {
+    width: 200px;
+} */
 
