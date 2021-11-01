@@ -76,4 +76,28 @@ header nav h2 ul li a:hover {
     background-color: grey;
 }
 
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.flex-card img {
+    /* display: flex; */
+    width: 200px;
+    margin-right: 50px;
+}
+
+.flex-text {
+    width: 70%;
+    border-left: black solid 5px;
+    padding: 0 50px;
+}
+
 
