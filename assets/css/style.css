@@ -76,6 +76,7 @@ header nav h2 ul li a:hover {
     background-color: grey;
 }
 
+/* Secition Header Elements */
 .flex-card , .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -90,43 +91,89 @@ header nav h2 ul li a:hover {
     background-color: rgba(100, 100, 100, 0.2);
 }
 
-.flex-card img , .portfolio .image-container img {
-    display: flex;
-    width: 200px;
+.flex-card .image-container , .portfolio .image-container {
+    display: inline-block;
+    width: 15%;
+    min-width: 190px;
+    margin-right: 50px;
+}
+
+.flex-card .image-container img , .portfolio .image-container img {
+    display: inline-block;
+    width: 100%;
     margin-right: 50px;
 }
 
 .flex-text , .project-gallery {
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
     border-left: black solid 5px;
     padding: 0 50px;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
+.project-gallery .hero-project img {
+    width: 100%;
+    padding: 0 10px;
+    border: black solid 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
-/* 
-.project-gallery {
+
+.hero-project {
+    position: relative;
+}
+
+.hero-project .project-text {
+    position: absolute;
+    bottom: 10%;
+    background-color: grey;
+    color: honeydew;
+    padding: 10px 20px;
+    width: 40%;
+    min-width: 350px;
+    border: black solid 3px;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hero-project .project-text h4 {
+    color: black;
+    font-size: x-large;
+}
+
+.project {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
-    width: 70%;
-} */
+    width: 48%;
+}
 
+.project-gallery .project img {
+    width: 100%;
+    padding: 0 10px;
+    border: black solid 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
 
+.project .project-text {
+    position: absolute;
+    bottom: 10%;
+    background-color: grey;
+    color: honeydew;
+    padding: 1vh 20px;
+    width: 60%;
+    min-width: 250px;
+    border: black solid 3px;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
 
-/* .hero-project {
-    display: flex;
-    width: 20%;
-} */
-
-/* .hero-project img {
-    display: flex;
-    width: 50%;
-}  */
-
-/* 
-.project-gallery img {
-    width: 200px;
-} */
-
+.project .project-text h4 {
+    color: black;
+    font-size: x-large;
+}
